@@ -1,6 +1,7 @@
 <h1 align="center">
   <a href="https://github.com/isaacsutor/dnd-bot">
-    <img src="https://raw.githubusercontent.com/isaacsutor/dnd-bot/images/main_town_by_iidanmrak_d5m080d.jpeg" alt="main_town_by_iidanmrak">
+    <img src="images/main_town_by_iidanmrak_d5m080d.jpeg"
+     alt="main_town_by_iidanmrak">
   </a>
 </h1>
 <p align="center">
