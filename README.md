@@ -11,8 +11,6 @@
   DnD Bot is a bot...
 </p>
 
-
-
 ### Features
 
 # DnD Bot
@@ -27,6 +25,7 @@ Simple bot to request feedback from players on the latest session
 ## Installation
 
 Install DnD Bot by downloading from GitHub (easier download and setup coming soon)
+
 ```
 git clone https://github.com/isaacsutor/dnd-bot
 ```
@@ -35,14 +34,30 @@ git clone https://github.com/isaacsutor/dnd-bot
 
 - **Integrations:** connects to discord
 
+### To Do:
+
+- Questionaire on trigger
+- DB for the results of the questionaire
+- add linting etc
+- add docker
+- add easy build/run instructions
+- update links
+- add GitHub actions
+- add extra icons/tags
+- use dotenv for environment variables and tokens
+- add maps command with options for regions maps to be sent
+- add test cases
+- add image submission for session images
+- add session notes submission
+- add who-is command for responding about who a certain person is
+- add info-request with prompt for pulling info about a specific place/person/thing
+
 ### For Users
 
 #### Quick Start
 
 Instructions to run here
 
-
-
-
 ## Attributions
+
 Project image credit: https://www.deviantart.com/iidanmrak
