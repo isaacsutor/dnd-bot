@@ -21,16 +21,15 @@ class Client(commands.Bot):
 
     def __init__(self):
         super().__init__(
-            command_prefix="!",  # commands.when_mentioned_or("!"),
+            command_prefix=commands.when_mentioned_or("."),
             intents=discord.Intents().all(),
         )
-        # self.cogslist = ["cogs.cog1"]
+        self.cogslist = ["cogs.maps"]
         # self.Session = sessionmaker(bind=engine)
 
     async def setup_hook(self):
-        # for ext in self.cogslist:
-        #     await self.load_extension(ext)
-        print("hello")
+        for ext in self.cogslist:
+            await self.load_extension(ext)
 
     async def on_ready(self):
         prfx = (
@@ -76,21 +75,5 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 print(TOKEN)
 bot = Client()
-
-
-@bot.command(name="99")
-async def nine_nine(ctx):
-    brooklyn_99_quotes = [
-        "I'm the human form of the 💯 emoji.",
-        "Bingpot!",
-        (
-            "Cool. Cool cool cool cool cool cool cool, "
-            "no doubt no doubt no doubt no doubt."
-        ),
-    ]
-
-    response = random.choice(brooklyn_99_quotes)
-    await ctx.send(response)
-
 
 bot.run(TOKEN)
